@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="aosp_direct" fetch="https://android.googlesource.com" />
-
     <project path="external/guava" name="platform/external/guava" remote="aosp_direct" />
+    <project path="external/javapoet" name="platform/external/javapoet" remote="aosp_direct" />
+    <project path="external/auto" name="platform/external/auto" remote="aosp_direct" />
+    <project path="external/dagger2" name="platform/external/dagger2" remote="aosp_direct" />
+    <project path="external/error_prone" name="platform/external/error_prone" remote="aosp_direct" />
 </manifest>
