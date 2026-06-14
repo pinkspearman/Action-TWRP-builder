@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="aosp_direct" fetch="https://android.googlesource.com" />
+
+    <project path="external/guava" name="platform/external/guava" remote="aosp_direct" />
+</manifest>
