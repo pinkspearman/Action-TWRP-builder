@@ -149,6 +149,8 @@ jobs:
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         lunch ${{ github.event.inputs.MAKEFILE_NAME }}-ap2a-eng && make clean && make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
+        mkdir -p .repo/local_manifests
+        cp ${GITHUB_WORKSPACE}/.repo/local_manifests/roomservice.xml .repo/local_manifests/
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
     - name: Upload to Release
